@@ -1,0 +1,54 @@
+{
+  "name": "terc20-token",
+  "version": "1.0.0",
+  "description": "",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "files": [
+    "src/**/*.sol",
+    "hardhat/**/*.ts",
+    "foundry/**/*.sol"
+  ],
+  "devDependencies": {
+    "@nomicfoundation/hardhat-foundry": "^1.0.1",
+    "@openzeppelin/contracts": "^4.8.2",
+    "@types/ethereum-block-by-date": "^1.4.1",
+    "@types/node": "^16.18.23",
+    "axios": "^1.4.0",
+    "ethereum-block-by-date": "^1.4.7",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.0",
+    "hardhat-abi-exporter": "^2.4.1",
+    "hardhat-contract-sizer": "^2.8.0",
+    "hardhat-gas-reporter": "^1.0.9",
+    "moment": "^2.29.4",
+    "prettier": "^2.8.2",
+    "prettier-plugin-solidity": "^1.1.1",
+    "solidity-coverage": "^0.8.2",
+    "solidity-docgen": "^0.6.0-beta.34",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "web3": "^1.8.1"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@typechain/hardhat": "^6.1.6",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "hardhat-deploy-ethers": "^0.3.0-beta.13"
+  },
+  "scripts": {
+    "setup": "make clean && make build",
+    "sync": "make update",
+    "test": "make test",
+    "snapshot": "make snapshot",
+    "format": "make format",
+    "formatAll": "prettier --write --ignore-path .gitignore ./ ",
+    "lint": "make lint",
+    "all": "make all"
+  },
+  "author": "",
+  "license": "ISC"
+}

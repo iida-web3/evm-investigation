@@ -1,0 +1,20 @@
+[profile.default]
+solc = '0.8.18'
+
+src = "src"
+out = "foundry/out"
+libs = ["foundry/lib"]
+gas_reports = ["foundry/gas_reports"]
+test = "foundry/test"
+
+script = "foundry/script"
+broadcast = "foundry/broadcast"
+
+cache = true
+cache_path = 'foundry/cache'
+
+[rpc_endpoints]
+local = "${NODE_URL}"
+
+[etherscan]
+local = { key = "${ETHERSCAN_API_KEY}" }
