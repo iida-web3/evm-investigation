@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-dotenv.config({ path: 'hardhat/.env.sepolia', debug: false });
+dotenv.config({ path: process.env.ENV_PATH || 'hardhat/.env.sepolia', debug: false });
 
 import '@nomicfoundation/hardhat-toolbox';
 import '@nomicfoundation/hardhat-foundry';
